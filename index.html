@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parkease - Car Details Form</title>
+<link rel="stylesheet" href="styles.css">
+<!-- Add Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Parkease</h1>
+    <form id="carForm">
+        <label for="model">Car Model:</label>
+        <input type="text" id="model" name="model" required>
+        <label for="year">Year of Make:</label>
+        <input type="number" id="year" name="year" min="1900" max="2099" required>
+        <label for="carNumber">Car Number:</label>
+        <input type="text" id="carNumber" name="carNumber" required>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<!-- Container for camera feed -->
+<div class="camera-container">
+    <!-- <i class="fas fa-video"></i> -->
+    <video id="cameraFeed" autoplay playsinline></video>
+</div>
+
+<script src="xlsx.full.min.js"></script>
+<script src="script.js"></script>
+
+
+<!-- Container for camera feed -->
+<div class="camera-container">
+    <video id="cameraFeed" autoplay playsinline></video>
+    <button id="toggleCamera">Turn Camera On</button>
+</div>
+
+<script>
+const cameraContainer = document.querySelector('.camera-container');
+const videoElement = document.getElementById('cameraFeed');
+let isCameraOn = true;
+
+// Function to toggle the camera feed
+function toggleCamera() {
+    if (isCameraOn) {
+        videoElement.srcObject = null; // Stop the camera feed
+        isCameraOn = false;
+        document.getElementById('toggleCamera').textContent = 'Turn Camera On';
+    } else {
+        navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } }) // Use environment facing mode for laptop camera
+            .then(function(stream) {
+                videoElement.srcObject = stream; // Start the camera feed
+            })
+            .catch(function(error) {
+                console.error('Error accessing camera:', error);
+            });
+        isCameraOn = true;
+        document.getElementById('toggleCamera').textContent = 'Turn Camera Off';
+    }
+}
+
+// Add click event listener to the button
+document.getElementById('toggleCamera').addEventListener('click', toggleCamera);
+</script>
+</body>
+</html>
