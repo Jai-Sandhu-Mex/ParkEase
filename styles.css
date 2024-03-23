@@ -1,31 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,600&display=swap');
+
 body {
-    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url(images/st-vic-Bnm0Ntarz6o-unsplash.jpg); /* Path to your car background image */
-    background-size: cover;
-    background-position: center;
-    display: flex;
+    background: linear-gradient(to bottom, #B4D4FF 50%, white 50%);
     justify-content: center;
     align-items: center;
 }
+.heading {
+    text-align: center;
+    font-family: "Raleway";
+}
+.form{
+    /* border: 2px solid red; */
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    width: 40vw;
+}
+.ima{
+width: 900vw;
+padding: 0px;
+margin: 0px;
+display: flex;
+position: absolute;
+left: 45vw;
+    
+}
+
+
 
 .container {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+     /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    margin-bottom: 20px
 }
 
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
+
+
+
 
 form {
     margin-top: 20px;
+    position: absolute;
+    bottom: 14vh;
 }
 
 input[type="text"],
@@ -40,12 +61,11 @@ input[type="number"] {
 
 input[type="submit"] {
     background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+    color: white 10px 20px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
-}
+    cursor: pointer; 
+} 
 
 input[type="submit"]:hover {
     background-color: #45a049;
@@ -62,9 +82,9 @@ input[type="submit"]:hover {
     border-radius: 10px;
     padding: 10px;
     text-align: center;
-} */
+}
 
-/* .camera-container i {
+.camera-container i {
     display: block;
     margin-bottom: 10px;
     font-size: 24px;
@@ -75,7 +95,7 @@ input[type="submit"]:hover {
     height: 100%;
     border-radius: 8px;
     object-fit: cover;
-} */
+}
 
 #toggleCamera {
     position: absolute;
@@ -89,7 +109,7 @@ input[type="submit"]:hover {
     border-radius: 5px;
     cursor: pointer;
     z-index: 3;
-}
+} */
 
 #toggleCamera:hover {
     background-color: #0056b3;
@@ -102,4 +122,51 @@ input[type="submit"]:hover {
         object-fit: contain; /* Cover the entire viewport */
         z-index: 2;
     }/
+}
+label {
+    font-weight:15px;
+}
+#carform label .model{
+    font-size:larger;
+}
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form {
+    position: absolute;
+    left: 20px; /* Adjust as needed */
+    top: 50%; /* Position form vertically in the middle */
+    transform: translateY(-50%); /* Move the form up by half of its own height */
+    padding: 20px;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    border-radius: 5px;
+}
+
+.car-image {
+    flex: 1; /* Allow the car image to take remaining space */
+    margin-left: 20px; /* Adjust as needed */
+}
+
+.car-image img {
+    max-width: 100%; /* Ensure the car image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+}
+.heading {
+    margin:0;
+    padding:0;
+    max-width: 20vw;
+    text-align: center;
+    font-family: "Raleway";
+
+}
+h1{
+
+    display: inline;
+    max-width: 20vw;
+    margin: 0px;
+    padding: 0px;
+    font-size: 50px; /* Adjust the font size as needed */
 }

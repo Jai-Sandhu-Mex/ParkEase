@@ -4,19 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Parkease - Car Details Form</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <!-- Add Font Awesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-
-<div class="container">
-    <h1>Parkease</h1>
+    
+          
+    
+<div class="heading raleway">
+    <h1> Parkease</h1>
+</div>
+<div class="ima">
+    <img src="images/car1.png" alt="none" width="900vw">
+</div>
+ 
+<div class="container form"  >
     <form id="carForm">
-        <label for="model">Car Model:</label>
+        <label for="model" class="model">Car Model:</label>
         <input type="text" id="model" name="model" required>
-        <label for="year">Year of Make:</label>
-        <input type="number" id="year" name="year" min="1900" max="2099" required>
+        <!-- <label for="year">Year of Make:</label> -->
+        <!-- <input type="number" id="year" name="year" min="1900" max="2099" required> -->
         <label for="carNumber">Car Number:</label>
         <input type="text" id="carNumber" name="carNumber" required>
         <input type="submit" value="Submit">
