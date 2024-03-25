@@ -20,7 +20,7 @@ body {
     display: inline-block;
     width: 40vw;
 }
-.ima{
+ .ima{
 width: 900vw;
 padding: 0px;
 margin: 0px;
@@ -28,7 +28,7 @@ display: flex;
 position: absolute;
 left: 45vw;
     
-}
+} 
 
 
 
@@ -169,4 +169,47 @@ h1{
     margin: 0px;
     padding: 0px;
     font-size: 50px; /* Adjust the font size as needed */
+}
+.navbar {
+    background-color:#B4D4FF; /* Set the background color of the navbar */
+    padding: 10px 0; /* Add padding to the top and bottom */
+    position: fixed; /* Fixed position to stick to the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.navbar .container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space elements evenly */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar .logo a {
+    color: black; /* Text color */
+    font-size: 50px; /* Adjust font size */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Add bold font weight */
+}
+
+.navbar .menu ul {
+    list-style: none; /* Remove default list style */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar .menu ul li {
+    display: inline-block; /* Display menu items inline */
+}
+
+.navbar .menu ul li a {
+    color: black; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Add padding */
+    transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.navbar .menu ul li a:hover {
+    background-color: grey; /* Change background color on hover */
+    border-radius: 5px; /* Add rounded corners */
+    font-weight: bold;
 }
