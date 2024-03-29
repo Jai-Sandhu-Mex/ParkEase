@@ -70,21 +70,20 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
-/* .camera-container {
-    position: fixed;
-    top: 50%;
-    right: 150px;
+.camera-container {
+    position: absolute;
+    margin-top:100px;
+    left: 1%;
+    top: 60%;
     transform: translateY(-50%);
     width: 350px;
     height: 350px;
-    background-color: #f0f0f0;
-    border: 2px solid #ccc;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
 }
 
-.camera-container i {
+/*.camera-container i {
     display: block;
     margin-bottom: 10px;
     font-size: 24px;
@@ -95,12 +94,12 @@ input[type="submit"]:hover {
     height: 100%;
     border-radius: 8px;
     object-fit: cover;
-}
+}*/
 
 #toggleCamera {
     position: absolute;
-    bottom: 5px;
-    left: 50%;
+    bottom: -100px;
+    left: 80%;
     transform: translateX(-50%);
     padding: 9px 19px;
     background-color: #007bff;
@@ -109,18 +108,23 @@ input[type="submit"]:hover {
     border-radius: 5px;
     cursor: pointer;
     z-index: 3;
-} */
+} 
 
 #toggleCamera:hover {
     background-color: #0056b3;
+
 }
 
 #cameraFeed {
     #cameraFeed {
-        width: 100vw; /* Full viewport width */
-        height: 100vh; /* Full viewport height */
-        object-fit: contain; /* Cover the entire viewport */
+        /* width: 100vw; Full viewport width */
+        /* height: 100vh; Full viewport height */
+        object-fit: contain; 
         z-index: 2;
+
+        
+
+        
     }/
 }
 label {
