@@ -30,4 +30,16 @@ document.getElementById("carForm").addEventListener("submit", function(event) {
     alert("Car details have been saved.");
     document.getElementById("carForm").reset();
 });
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("register").addEventListener("click", function() {
+        document.getElementById("loginForm").style.display = "block";
+    });
+
+    document.getElementById("registerForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        // Your form submission logic here
+        alert("Registered successfully!");
+        document.getElementById("registerForm").reset();
+    });
+});
 

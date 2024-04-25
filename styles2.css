@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 200vh;
+}
+header .heading{
+    display: flex;
+    position: relative;
+    bottom: -20px;
+}
+header{
+    display: flex;
+}
+nav ul li{
+    padding: 20px;
+    display: inline-flex;
+    position: relative;
+    left: 45vw;
+    top: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+nav ul li:last-child {
+    border: 2px solid #1679AB; /* Add blue border to last li element */
+    color: #1679AB; /* Make text blue */
+    border-radius: 40px;
+}
+/* Existing styles */
+
+#register:hover + #loginForm {
+    display: block;
+}
+/* Footer styles */
+footer {
+    background-color: #1679AB; /* Blue background */
+    color: #fff; /* White text color */
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0; /* Add some margin between each line */
+}
+
+footer a {
+    color: #1679;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    display: inline-block; /* Display options horizontally */
+    margin: 0 10px; /* Add some spacing between options */
+}
+
+footer li:last-child {
+    border: 2px solid #1679; /* Add border to last option */
+    border-radius: 20px; /* Add border radius */
+    padding: 5px 15px; /* Add padding to last option */
+}
+/* Card styles */
+/* Card styles */
+body {
+    background-color: white;
+  }
+  
+  
+    .container {
+        width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 100px; /* Adjust margin to leave space for the footer */
+        padding: 0;
+    
+    
+  
+    @media screen and (min-width: 992px) and (max-width: 1439px) {
+      max-width: 1279px !important;
+      padding: 0 !important;
+      margin: 0 80px !important;
+      width: auto !important;
+    }
+  
+    @media screen and (max-width: 991px) {
+      max-width: 959px !important;
+      margin: 0 16px !important;
+      padding: 0 !important;
+      width: auto !important;
+    }
+  }
+  
+  
+  
+  .container-title {
+    text-align: center;
+    padding: 0 !important;
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: #1679;
+    font-weight: 600;
+    line-height: 60px;
+  }
+  
+  .card {
+    max-width: 550px;
+    border: 2px solid #1679AB; /* Add border with the specified color */
+    border-radius: 10px;
+    width: 85%;
+    margin-inline: auto;
+}
+
+  
+  .container-card {
+    position: relative;
+    border: 2px solid transparent;
+    background: linear-gradient(#1679);
+    background-clip: padding-box;
+    border-radius: 45px;
+    padding: 40px;
+    img {
+      margin-bottom: 32px;
+    }
+  }
+  
+  .bg-green-box,
+  .bg-white-box,
+  .bg-yellow-box,
+  .bg-blue-box {
+    position: relative;
+  }
+  
+  .bg-green-box::after,
+  .bg-white-box::after,
+  .bg-yellow-box::after,
+  .bg-blue-box::after {
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    content: "";
+    z-index: -1;
+    border-radius: 45px;
+  }
+  
+  /* .bg-green-box::after {
+    background: linear-gradient(71deg, #1679AB, #0d1212);
+  }
+  
+  .bg-white-box::after {
+    background: linear-gradient(71deg, #121013, #b0afb0, #121013);
+  }
+  
+  .bg-yellow-box::after {
+    background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
+  }
+  
+  .bg-blue-box::after {
+    background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
+  } */
+  
+  .card-title {
+    font-weight: 600;
+color:#1679;
+    letter-spacing: -0.02em;
+    line-height: 40px;
+    font-style: normal;
+    font-size: 28px;
+    padding-bottom: 8px;
+  }
+  
+  .card-description {
+    font-weight: 600;
+    line-height: 32px;
+    color: black(0, 0%, 100%, 0.5);
+    font-size: 16px;
+    max-width: 470px;
+  }
+  .gradient-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Set three cards in a row */
+    gap: 32px; /* Adjust the gap between cards */
+    padding: 30px;
+    @media screen and (max-width: 991px) {
+      grid-template-columns: 1fr; /* Set one card per row on smaller screens */
+    }
+}
+
+/* Hide the fourth card */
+.card:nth-child(4) {
+    display: none;
+}
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+
+    .content-wrapper {
+        min-height: 100vh;
+        padding-bottom: 60px; /* Height of the footer */
+    }
+
+    /* Style for the content */
+    .content {
+        padding: 20px;
+    }
+    .footer.visible {
+        bottom: 0;
+    }
+    .footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed; /* Fix the footer position */
+        left: 0;
+        bottom: -60px; /* Hide the footer initially */
+        width: 100%;
+        transition: bottom 0.3s; /* Add smooth transition effect */
+    }
+    .container {
+        width: 85%; /* Adjust width as needed */
+        margin: 0 auto; /* Center the container horizontally */
+        margin-bottom: 70px; /* Adjust margin to leave space for the footer */
+    }
+    
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+  
