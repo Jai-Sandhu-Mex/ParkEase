@@ -1,10 +1,56 @@
+
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header{
+  display: block;
+  height: 25vh;
+}
+
+.intro{
+  width: 100%;
+  display: inline;
+  height: 20vh;
+}
+.head{
+  display: block;
+}
+.logo{
+  position: absolute;
+  left: 10vw;
+  top:2vh
+}
+
 *{
     margin: 0;
     padding: 0;
 }
-body{
-    height: 200vh;
+.intro .screen{
+  display: inline;
+  position: relative;
+  left: 15vw;
+  bottom: 5vh;
 }
+
+.screen p{
+  display: inline;
+  color:#1679AB;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.screen h3{
+  width: 100vw;
+  color: #1679AB;
+  font-size: 45px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
 header .heading{
     display: flex;
     position: relative;
@@ -14,11 +60,11 @@ header{
     display: flex;
 }
 nav ul li{
-    padding: 20px;
-    display: inline-flex;
-    position: relative;
-    left: 45vw;
-    top: 5px;
+  padding: 20px;
+  display: inline-flex;
+  position: relative;
+  left: 55vw;
+  top: 3vh;
 }
 nav ul li a{
     text-decoration: none;
@@ -36,45 +82,7 @@ nav ul li:last-child {
 }
 /* Existing styles */
 
-#register:hover + #loginForm {
-    display: block;
-}
-/* Footer styles */
-footer {
-    background-color: #1679AB; /* Blue background */
-    color: #fff; /* White text color */
-    padding: 20px 0;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 5px 0; /* Add some margin between each line */
-}
-
-footer a {
-    color: #1679;
-    text-decoration: none;
-}
-
-footer ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0;
-    margin: 0;
-}
-
-footer li {
-    display: inline-block; /* Display options horizontally */
-    margin: 0 10px; /* Add some spacing between options */
-}
-
-footer li:last-child {
-    border: 2px solid #1679; /* Add border to last option */
-    border-radius: 20px; /* Add border radius */
-    padding: 5px 15px; /* Add padding to last option */
-}
+/* 
 /* Card styles */
 /* Card styles */
 body {
@@ -141,15 +149,14 @@ body {
   
   .bg-green-box,
   .bg-white-box,
-  .bg-yellow-box,
-  .bg-blue-box {
+  .bg-yellow-box
+   {
     position: relative;
   }
   
   .bg-green-box::after,
   .bg-white-box::after,
-  .bg-yellow-box::after,
-  .bg-blue-box::after {
+  .bg-yellow-box::after{
     position: absolute;
     top: -1px;
     bottom: -1px;
@@ -160,21 +167,6 @@ body {
     border-radius: 45px;
   }
   
-  /* .bg-green-box::after {
-    background: linear-gradient(71deg, #1679AB, #0d1212);
-  }
-  
-  .bg-white-box::after {
-    background: linear-gradient(71deg, #121013, #b0afb0, #121013);
-  }
-  
-  .bg-yellow-box::after {
-    background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
-  }
-  
-  .bg-blue-box::after {
-    background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
-  } */
   
   .card-title {
     font-weight: 600;
@@ -208,15 +200,6 @@ color:#1679;
     display: none;
 }
 
-    .footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
-    }
 
 
     .content-wrapper {
@@ -228,34 +211,33 @@ color:#1679;
     .content {
         padding: 20px;
     }
-    .footer.visible {
-        bottom: 0;
-    }
-    .footer {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
-        position: fixed; /* Fix the footer position */
-        left: 0;
-        bottom: -60px; /* Hide the footer initially */
-        width: 100%;
-        transition: bottom 0.3s; /* Add smooth transition effect */
-    }
+
     .container {
         width: 85%; /* Adjust width as needed */
         margin: 0 auto; /* Center the container horizontally */
         margin-bottom: 70px; /* Adjust margin to leave space for the footer */
     }
-    
-    .footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
+    .blue-road{
+      display: block;
+      position: absolute;
+      width: 100%;
+      top:82vh
+      
     }
+.blue-road span{
+  border: 2px solid #00308F;
+  background-color: #00308F;
+  width: 100vw;
+  height: 18vh;
+  color: white;
+  padding: 0px;
+  display: block;
+
+}
+.image{
+  position :absolute;
+  bottom: 11.7vh;
+  right:50vw;
+}
     
   

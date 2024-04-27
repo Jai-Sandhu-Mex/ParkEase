@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="register.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+    </style>
 </head>
+
 <header>
-    <h2 class="heading">PARKEASE</h2>
+  <div class="head">
+
+
+    <img src="/ParkEase-main/images/pe-logog.jpg" alt="" width="90px" class="logo">
+
     <nav>
     <ul>
         <li>HOME</li>
@@ -17,7 +26,10 @@
         <li id="register"><a href="#" id="registrationLink">REGISTRATION</a></li>
     </ul>
 </nav>
+</div>
 </header>
+<body>
+<!-- 
 <div class="container">
     <p class="container-title"></p>
   
@@ -93,64 +105,85 @@
       </div>
   
     </div>
-  </div>
-<div id="registrationModal" class="modal" style="display: none;">
+  </div> -->
+<div  class="intro">
+
+
+<span class="screen">
+  <h3>Welcome to</h3>
+  <H3>Parkease Parking Managment</H3>
+  <p class="wavy-underline">Park with ease with world's best parking system</p>
+</span>
+</div>
+  <div id="registrationModal" class="modal" style="display: none;">
     <div class="registration-form">
-      <h2>Registration</h2>
-      <form action="/submit_registration.php" method="post">
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" required><br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-        <input type="submit" value="Register">
-      </form>
+      <form class="form">
+        <p class="title">Register </p>
+        <p class="message">Signup now and get full access to our app. </p>
+            <div class="flex">
+            <label>
+                <input required="" placeholder="" type="text" class="input">
+                <span>Firstname</span>
+            </label>
+    
+            <label>
+                <input required="" placeholder="" type="text" class="input">
+                <span>Lastname</span>
+            </label>
+        </div>  
+                
+        <label>
+            <input required="" placeholder="" type="email" class="input">
+            <span>Email</span>
+        </label> 
+            
+        <label>
+            <input required="" placeholder="" type="password" class="input">
+            <span>Password</span>
+        </label>
+        <label>
+            <input required="" placeholder="" type="password" class="input">
+            <span>Confirm password</span>
+        </label>
+        <button class="submit">Submit</button>
+        <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
+    </form>
     </div>
   </div>
-<footer class="footer visible">
-    <p>Contact Us: 123-456-7890 | Email: info@parkingwebsite.com</p>
-    <p>Address: 123 Parking Street, City, Country</p>
-    <p>Happy Customer Service | Facilities | Year of Establishment: 2024</p>
-    <p>Follow Us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
-</footer>
+  <div class="image">
+    <img src="/ParkEase-main/images/7506749.jpg" alt="" width="500px ">
+  </div>
+  <div class="blue-road">
+    <span>2024</span> 
+
+  </div>
+ 
 
     <script src="script.js"></script>
     <script>
-        // Function to toggle the registration form visibility and scroll to the top
-        document.getElementById("registrationLink").addEventListener("click", function(event) {
-            event.preventDefault(); // Prevent default link behavior
-            var modal = document.getElementById("registrationModal");
-            if (modal.style.display === "none") {
-                modal.style.display = "block"; // Show the form
-                window.scrollTo(0, 0); // Scroll to the top
-            } else {
-                modal.style.display = "none"; // Hide the form
-                window.scrollTo(0, 0); // Scroll to the top
-            }
-        });
-        
-        // Close the registration form when clicked outside of it
-        window.onclick = function(event) {
-            var modal = document.getElementById("registrationModal");
-            if (event.target == modal) {
-                modal.style.display = "none";
-                window.scrollTo(0, 0); // Scroll to the top
-            }
-        }
-        </script>
-        <script>
-            // Show the footer when user scrolls down
-            window.addEventListener("scroll", function() {
-                var footer = document.getElementById("footer");
-                if (window.pageYOffset > 0) {
-                    footer.classList.add("visible");
-                } else {
-                    footer.classList.remove("visible");
-                }
-            });
-            </script>
-
+      // Function to toggle the registration form visibility and scroll to the top
+      var registrationModal = document.getElementById("registrationModal");
+      var registrationLink = document.getElementById("registrationLink");
+      
+      registrationLink.addEventListener("click", function(event) {
+          event.preventDefault(); // Prevent default link behavior
+          if (registrationModal.style.display === "none") {
+              registrationModal.style.display = "block"; // Show the form
+              window.scrollTo(0, 0); // Scroll to the top
+          } else {
+              registrationModal.style.display = "none"; // Hide the form
+              window.scrollTo(0, 0); // Scroll to the top
+          }
+      });
+      
+      // Close the registration form when clicked outside of it
+      window.onclick = function(event) {
+          if (event.target == registrationModal) {
+              registrationModal.style.display = "none";
+              window.scrollTo(0, 0); // Scroll to the top
+          }
+      }
+      </script>
 </body>
 
 </html>
