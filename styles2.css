@@ -46,14 +46,14 @@ header{
 
 .screen p{
   display: inline;
-  color:#1679AB;
+  color:#056b9e;
   font-family: "Kanit", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 .screen h3{
   width: 100vw;
-  color: #1679AB;
+  color: #056b9e;
   font-size: 45px;
   font-family: "Kanit", sans-serif;
   font-weight: 700;
@@ -86,8 +86,8 @@ nav{
     flex-direction: column;
 }
 nav ul li:last-child {
-    border: 2px solid #1679AB; /* Add blue border to last li element */
-    color: #1679AB; /* Make text blue */
+    border: 2px solid #056b9e; /* Add blue border to last li element */
+    color: #056b9e; /* Make text blue */
     border-radius: 40px;
 }
 /* Existing styles */
@@ -138,7 +138,7 @@ body {
   
   .card {
     max-width: 550px;
-    border: 2px solid #1679AB; /* Add border with the specified color */
+    border: 2px solid #056b9e; /* Add border with the specified color */
     border-radius: 10px;
     width: 85%;
     margin-inline: auto;
@@ -352,8 +352,8 @@ body {
 	}
 
 	.title {
-		font-size: 1.5rem;
-		color: 1679ab;
+		font-size: 1.6rem;
+		color: #056b9e;
 		line-height: 1.25;
 		& + * {
 			margin-top: 1rem;
